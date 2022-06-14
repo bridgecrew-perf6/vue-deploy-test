@@ -5,7 +5,7 @@
 
         <h1>main</h1>
 
-   업데이트가 되었나?-05:07
+   업데이트가 되었나?-05:11
         <button @click="onClick">
 
             <i class="btn-modal-close fas fa-times" >모달 1</i>
