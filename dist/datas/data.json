@@ -1,0 +1,236 @@
+{
+
+	"RES_CODE": "0000",
+	"DATA": [{
+		"grpNo": "3333",
+		"grpName": "메인음식",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "208101",
+			"goodsName": "놀부부대찌게 세",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "3334",
+		"grpName": "메인음식2",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "555",
+		"grpName": "메인음식3",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "5553",
+		"grpName": "메인음식4",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "1234",
+		"grpName": "메인음식",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "5678",
+		"grpName": "메인음식",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "8904",
+		"grpName": "메인음식",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "1466",
+		"grpName": "메인음식메인음식",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "1324",
+		"grpName": "메인",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		},{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "45646",
+		"grpName": "매운찜닭",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "564747",
+		"grpName": "음료수",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	},{
+		"grpNo": "345643",
+		"grpName": "메인음식",
+		"goodsList": [{
+			"imgUrl": "null",
+			"goodsNo": "2222",
+			"goodsName": "오징어",
+			"goodsMemo": "맛있어요",
+			"goodsPrice": "34000",
+			"ordDnLimit": "10000",
+			"goodsDnPrice": "1000"
+
+		}]
+	}
+
+]
+
+}

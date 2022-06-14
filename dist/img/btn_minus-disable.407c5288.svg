@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <g data-name="btn_minus-disable/ 72" transform="translate(-457 -496)">
+        <g data-name="타원 196" transform="translate(457 496)" style="stroke:#ddd;stroke-width:2px;fill:none">
+            <circle cx="36" cy="36" r="36" style="stroke:none"/>
+            <circle cx="36" cy="36" r="35" style="fill:none"/>
+        </g>
+        <rect data-name="사각형 728" width="20" height="4" rx="2" transform="translate(483 530)" style="fill:#ccc"/>
+    </g>
+</svg>
