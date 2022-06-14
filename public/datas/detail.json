@@ -1,0 +1,169 @@
+{
+    "RES_CODE": "0000",
+    "RES_MSG": "",
+    "DATA": {
+        "stGoodsNo": 208101,
+        "imgTUrl": "/store_goods/889/S000889/Thumbnail/20200324TT164701.png",
+        "imgUrl": "/store_goods/889/S000889/20200324TT164709.png",
+        "goodsName": "놀부부대세트",
+        "goodsStatus": "1",
+        "goodsPrice": 21000,
+        "goodsDnPrice": 21000,
+        "goodsDnYn": "N",
+        "goodsMemo": "놀부부대찌개+놀부사리(놀부햄+프랑크소시지+사라미햄+브로니햄+감자만두+조랭이떡+감자수제비+생라면)+탄산",
+        "goodsLimitOnce": 0,
+        "goodsLimitDay": 0,
+        "dvryMinPrice": 100,
+        "ordDnLimit": 100000,
+        "optionGrpList": [
+            {
+                "optionGrpType": "1",
+                "optionGrpName": "옵션1",
+                "optionGrpViewOrder": 1,
+                "optionList": [
+                    {
+                        "optionNo": 10593,
+                        "optionName": "대",
+                        "optionPrice": 5000,
+                        "optionViewOrder": 1
+                    },
+                    {
+                        "optionNo": 10594,
+                        "optionName": "중",
+                        "optionPrice": 3000,
+                        "optionViewOrder": 2
+                    },
+                    {
+                        "optionNo": 10595,
+                        "optionName": "소",
+                        "optionPrice": 0,
+                        "optionViewOrder": 3
+                    }
+                ]
+            },
+            {
+                "optionGrpType": "2",
+                "optionGrpName": "옵션2",
+                "optionGrpViewOrder": 2,
+                "optionList": [
+                    {
+                        "optionNo": 10596,
+                        "optionName": "순한맛",
+                        "optionPrice": 0,
+                        "optionViewOrder": 1
+                    },
+                    {
+                        "optionNo": 10597,
+                        "optionName": "매운맛",
+                        "optionPrice": 500,
+                        "optionViewOrder": 2
+                    }
+                ]
+            }
+        ],
+        "addGrpList": [
+            {
+                "conGrpNo": 16805,
+                "conGrpName": "사리+치즈+콜라",
+                "goodsSelType": "1",
+                "goodsSelNum": 3,
+                "grpViewOrder": 1,
+                "addGoodsList": [
+                    {
+                        "stGoodsNo": 240370,
+                        "imgTUrl": "/store_goods/889/S000889/Thumbnail/20220126152617AZ7095.jpg",
+                        "goodsName": "팥 추가",
+                        "goodsStatus": "1",
+                        "goodsPrice": 3000,
+                        "goodsDnPrice": 3000,
+                        "goodsDnYn": "N",
+                        "goodsMemo": null,
+                        "ordDnLimit": 0,
+                        "goodsViewOrder": 1
+                    },
+                    {
+                        "stGoodsNo": 208116,
+                        "imgTUrl": null,
+                        "goodsName": "라면사리",
+                        "goodsStatus": "1",
+                        "goodsPrice": 1000,
+                        "goodsDnPrice": 1000,
+                        "goodsDnYn": "N",
+                        "goodsMemo": null,
+                        "ordDnLimit": 0,
+                        "goodsViewOrder": 1
+                    },
+                    {
+                        "stGoodsNo": 240363,
+                        "imgTUrl": null,
+                        "goodsName": "리얼쇼콜라타르트",
+                        "goodsStatus": "1",
+                        "goodsPrice": 6500,
+                        "goodsDnPrice": 6500,
+                        "goodsDnYn": "N",
+                        "goodsMemo": null,
+                        "ordDnLimit": 0,
+                        "goodsViewOrder": 2
+                    },
+                    {
+                        "stGoodsNo": 240369,
+                        "imgTUrl": "/store_goods/889/S000889/Thumbnail/20220126144838AZ4475.jpg",
+                        "goodsName": "휘핑크림 추가",
+                        "goodsStatus": "1",
+                        "goodsPrice": 500,
+                        "goodsDnPrice": 500,
+                        "goodsDnYn": "N",
+                        "goodsMemo": null,
+                        "ordDnLimit": 0,
+                        "goodsViewOrder": 2
+                    }
+                ]
+            },
+            {
+                "conGrpNo": 17501,
+                "conGrpName": "육수추가",
+                "goodsSelType": "0",
+                "goodsSelNum": 1,
+                "grpViewOrder": 2,
+                "addGoodsList": [
+                    {
+                        "stGoodsNo": 240363,
+                        "imgTUrl": null,
+                        "goodsName": "리얼쇼콜라타르트",
+                        "goodsStatus": "1",
+                        "goodsPrice": 6500,
+                        "goodsDnPrice": 6500,
+                        "goodsDnYn": "N",
+                        "goodsMemo": null,
+                        "ordDnLimit": 0,
+                        "goodsViewOrder": 1
+                    },
+                    {
+                        "stGoodsNo": 208106,
+                        "imgTUrl": null,
+                        "goodsName": "통등심돈카츠",
+                        "goodsStatus": "1",
+                        "goodsPrice": 6000,
+                        "goodsDnPrice": 3000,
+                        "goodsDnYn": "Y",
+                        "goodsMemo": "통핑세트 주문시에만 추가가능",
+                        "ordDnLimit": 10000,
+                        "goodsViewOrder": 1
+                    },
+                    {
+                        "stGoodsNo": 208105,
+                        "imgTUrl": null,
+                        "goodsName": "놀부사리",
+                        "goodsStatus": "1",
+                        "goodsPrice": 5000,
+                        "goodsDnPrice": 5000,
+                        "goodsDnYn": "N",
+                        "goodsMemo": "놀부햄+프랑크+브로니+사라미+감자만두+수제비+조랭이떡+생라면",
+                        "ordDnLimit": 0,
+                        "goodsViewOrder": 2
+                    }
+                ]
+            }
+        ]
+    }
+}

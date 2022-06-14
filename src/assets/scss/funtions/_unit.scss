@@ -1,0 +1,11 @@
+@function em($val, $font-size-base: 16) {
+  @return ($val/$font-size-base) * 1em;
+}
+
+@function rem($val, $font-size-base: 16) {
+  @return ($val/$font-size-base) * 1rem;
+}
+
+@function vw($val, $font-size-base: 1920) {
+  @return ($val/($font-size-base/100)) * 1vw;
+}

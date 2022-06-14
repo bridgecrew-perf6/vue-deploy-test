@@ -1,0 +1,128 @@
+// base
+@import '~@/assets/scss/base/_mixins.scss';
+@import '~@/assets/scss/base/_variables.scss';
+@import '~@/assets/scss/base/_function.scss';
+
+.write-review_box{
+	width: 100%;
+	max-width: 720px;
+	.give-score {
+		width: 100%;
+		> li {
+			padding-top: rem(60);
+			padding-bottom: rem(50);
+			border-bottom: 1px solid #e6e6e6;
+			&:last-child{
+				border-bottom: none;
+			}
+			h2 {
+				@include page-title;
+				padding-bottom: rem(30);
+				text-align: center;
+			}
+			> ul {
+				@include clearfix();
+				width: 100%;
+				text-align: center;
+				
+				li {
+					display: inline-block;
+					padding-right: rem(14);
+					button {
+						width: rem(48);
+						height: rem(48);
+						text-indent: -9999em;
+						font-size: 0;
+						background: url(~@/assets/img/history/btn_star-default48.png) no-repeat 0 0;
+						background-size: rem(48) rem(48);
+					}
+					> span {
+						@include page-title;
+						height: rem(48);
+						padding-top: rem(6);
+						line-height:1.6;
+					}
+				}
+			}
+		}
+	}
+	//give-score end
+	.review-text {
+		height: rem(404);
+		margin: rem(20) rem(40) 0;
+		padding: rem(32) rem(30) rem(26);
+		border-radius: rem(10);
+		border: 1px solid #ddd;
+		overflow: hidden;
+		textarea { 
+			width: 100%;
+			height: rem(313);
+			resize: none;
+			font-size: rem(28);
+			line-height: 1.57;
+			letter-spacing: letterSpacing(-0.84);
+			color: #888;
+			@include placeholder(#aaa);
+		}
+		span {
+			display: block;
+			width: 100%;
+			font-size: rem(28);
+			letter-spacing: letterSpacing(-0.84);
+			text-align: right;
+			color: #aaa;
+		}
+	}
+	//review-text
+	.photo_list {
+		padding: rem(40);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		li {
+			z-index: 1;
+			position: relative;
+			width: rem(146);
+			height: rem(146);
+			border-radius: rem(14);
+			overflow: hidden;
+			&:first-child {
+				padding: rem(26) 0;
+				background-color: #e6e6e6;
+			}
+			p {
+				padding-top: rem(65);
+				font-size: rem(24);
+				line-height: 1.83;
+				text-align: center;
+				color: #aaa;
+				background: url(../../../assets/img/history/icon_picture.png) no-repeat 50% 0;
+			}
+			span { 
+				z-index: 1;
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				img {
+					z-index: 2;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: auto;
+					height: auto;
+					transform: translateX(-50%) translateY(-50%);
+				}
+			}
+			i {
+				z-index: 3;
+				position: absolute;
+				top: rem(14);
+				right: rem(14);
+				width: rem(34);
+				height: rem(34);
+			}
+		}
+	}
+}

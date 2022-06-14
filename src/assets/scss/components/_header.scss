@@ -1,0 +1,37 @@
+// base
+@import "~@/assets/scss/funtions/functions";
+@import "~@/assets/scss/base/variables";
+@import "~@/assets/scss/mixins/mixins";
+
+#header {
+	position: relative;
+  
+	border-bottom: 1px solid $border-color-1;
+	height: rem(60);
+	padding-left: rem(20);
+	padding-right: rem(20);
+	.header-row {
+	  display: flex;
+	  align-items: center;
+	  height: 100%;
+  
+	  h1 {
+		padding-left: rem(14);
+		font-size: rem(18);
+		color: #222;
+		font-weight: 700;
+  
+	  }
+	}
+  
+	.btn-history-back{
+  
+	  background-image:  url(~@/assets/images/icon/icon_back.png) ;
+	  background-size:17px auto;
+	  background-repeat: no-repeat;
+	  width: 17px;
+	  height: 17px;
+  
+	}
+  }
+  

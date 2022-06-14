@@ -1,0 +1,151 @@
+//Dependency : _variables.scss
+//SUMMARY:
+//clearfix
+//reset-text
+//scrollbar
+//placeholder
+//ellipsis
+//END
+
+//clearfix
+@mixin clearfix() {
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+
+//reset-text
+@mixin reset-text() {
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+}
+
+//scrollbar
+@mixin col-scroll($track: #fff, $thumb: #999) {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: $track;
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background-color: $track;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $thumb;
+    }
+}
+
+//placeholder
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &::-ms-input-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &::placeholder {
+        color: $color;
+        @content;
+    }
+}
+
+//ellipsis
+// ex) line 1줄	@include ellipsis ,line 2줄 @include ellipsis(40,2)
+@mixin ellipsis($height: null, $line: 1) {
+    @if ($line==1) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+    }
+
+    @else {
+        height: #{$height}px;
+        $line-height: unquote(($height / $line) + px);
+        line-height: $line-height;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
+}
+
+
+// ==============================
+// Font size mixin
+// ==============================
+
+//  default font scale bounding
+$font-lock-min: 400px !default;
+$font-lock-max: 1000px !default;
+
+//  font-size
+@mixin font-size($min,
+    // font-size
+    $max: null,
+    // optional maximum font size
+    $lock-min: $font-lock-min,
+    // optional minimum viewport width
+    $lock-max: $font-lock-max // optional maximum viewport width
+
+) {
+    & {
+        font-size: $min;
+    }
+
+    @if $max {
+        @media (min-width: $lock-min) {
+            & {
+                font-size: calc(#{$min} + #{num($max) - num($min)} * (100vw - #{$lock-min}) / #{num($lock-max) - num($lock-min)});
+            }
+        }
+
+        @media (min-width: $lock-max) {
+            & {
+                font-size: $max;
+            }
+        }
+    }
+}
+
+//  strip units helper function
+@function num($input) {
+    @return $input/($input * 0 + 1);
+}

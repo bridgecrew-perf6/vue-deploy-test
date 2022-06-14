@@ -1,0 +1,543 @@
+@charset "UTF-8";
+
+/*
+ * File       : _utils.scss
+ * Author     : khr
+ *
+ * Dependency : _variables.scss, _mixin.scss 
+ *
+ * SUMMARY:
+* Text(each)
+* Align
+* Background(each)
+* Borders
+* Clearfix
+* Display(each)
+* Embed
+* Overflow(each)
+* Position(each)
+* Spacing(each)
+* Sizing
+* Shadow
+* grid(each)
+* visually-hidden
+* curser 
+*/
+
+
+
+/* Text ================================================== */
+
+// text-color
+
+
+.text-white {
+    color: #fff !important;
+}
+
+@each $color,
+$value in $theme-colors {
+    @include text-emphasis-variant('.text-#{$color}', $value, true);
+}
+
+
+
+
+// Text weight
+
+.font-weight-thin {
+    font-weight: 100 !important;
+}
+
+.font-weight-light {
+    font-weight: 300 !important;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.font-weight-semibold {
+    font-weight: 600 !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.font-weight-black {
+    font-weight: 900 !important;
+}
+
+// Transformation
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+
+
+
+/* Align ================================================== */
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+
+.align-baseline {
+    vertical-align: baseline !important;
+}
+
+.align-top {
+    vertical-align: top !important;
+}
+
+.align-middle {
+    vertical-align: middle !important;
+}
+
+.align-bottom {
+    vertical-align: bottom !important;
+}
+
+.align-text-bottom {
+    vertical-align: text-bottom !important;
+}
+
+.align-text-top {
+    vertical-align: text-top !important;
+}
+
+
+//줄 바꿈 방지
+.text-nowrap {
+    white-space: nowrap !important;
+}
+
+// 가로영역 넘친 단어 줄 바꿈
+.text-break {
+    word-wrap: break-word !important;
+}
+
+//줄바꿈 단어단위 자름
+.text-keep {
+    word-break: keep-all !important;
+}
+
+
+/* Background ==================================================*/
+@each $color,
+$value in $theme-colors {
+    @include bg-variant('.bg-#{$color}', $value, true);
+}
+
+
+
+
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+/* Borders  ==================================================*/
+.border {
+    border: 1px solid $border-color-1 !important;
+}
+
+.border-top {
+    border-top: 1px solid $border-color-1 !important;
+}
+
+.border-right {
+    border-right: 1px solid $border-color-1 !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $border-color-1 !important;
+}
+
+.border-left {
+    border-left: 1px solid $border-color-1 !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.border-top-0 {
+    border-top: 0 !important;
+}
+
+.border-right-0 {
+    border-right: 0 !important;
+}
+
+.border-bottom-0 {
+    border-bottom: 0 !important;
+}
+
+.border-left-0 {
+    border-left: 0 !important;
+}
+
+
+.border-white {
+    border-color: #fff !important;
+}
+
+//
+// Border-radius
+//
+
+.rounded-sm {
+    border-radius: $border-radius-sm !important;
+}
+
+.rounded {
+    border-radius: $border-radius !important;
+}
+
+.rounded-top {
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
+}
+
+.rounded-right {
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+}
+
+.rounded-bottom {
+    border-bottom-right-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
+}
+
+.rounded-left {
+    border-top-left-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
+}
+
+.rounded-lg {
+    border-radius: $border-radius-lg !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.rounded-pill {
+    border-radius: $rounded-pill !important;
+}
+
+.rounded-0 {
+    border-radius: 0 !important;
+}
+
+/* Clearfix ==================================================*/
+
+.clearfix {
+    &::after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+}
+
+/* Display ==================================================*/
+
+
+@each $value in $displays {
+    .d-#{$value} {
+        display: $value !important;
+    }
+}
+
+
+
+/* Embed ==================================================*/
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+
+    &::before {
+        display: block;
+        content: '';
+    }
+
+    .embed-responsive-item,
+    iframe,
+    embed,
+    object,
+    video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+
+
+/* Overflow==================================================*/
+
+@each $value in $overflows {
+    .overflow-#{$value} {
+        overflow: $value !important;
+    }
+}
+
+/* Position==================================================*/
+
+@each $position in $positions {
+    .position-#{$position} {
+        position: $position !important;
+    }
+}
+
+// Shorthand
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+}
+
+.sticky-top {
+    @supports (position: sticky) {
+        position: sticky;
+        top: 0;
+        z-index: $zindex-sticky;
+    }
+}
+
+
+/* Sizing==================================================*/
+
+.mw-100 {
+    max-width: 100% !important;
+}
+
+.mh-100 {
+    max-height: 100% !important;
+}
+
+
+.min-vw-100 {
+    min-width: 100vw !important;
+}
+
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+.vw-100 {
+    width: 100vw !important;
+}
+
+.vh-100 {
+    height: 100vh !important;
+}
+
+/* Spacing==================================================*/
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include mdq-max($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $prop,
+        $abbrev in (margin: m, padding: p) {
+
+            @each $size,
+            $length in $spacers {
+                .#{$abbrev}#{$infix}-#{$size} {
+                    #{$prop}: $length !important;
+                }
+
+                .#{$abbrev}t#{$infix}-#{$size},
+                .#{$abbrev}y#{$infix}-#{$size} {
+                    #{$prop}-top: $length !important;
+                }
+
+                .#{$abbrev}r#{$infix}-#{$size},
+                .#{$abbrev}x#{$infix}-#{$size} {
+                    #{$prop}-right: $length !important;
+                }
+
+                .#{$abbrev}b#{$infix}-#{$size},
+                .#{$abbrev}y#{$infix}-#{$size} {
+                    #{$prop}-bottom: $length !important;
+                }
+
+                .#{$abbrev}l#{$infix}-#{$size},
+                .#{$abbrev}x#{$infix}-#{$size} {
+                    #{$prop}-left: $length !important;
+                }
+            }
+        }
+
+        // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+        @each $size,
+        $length in $spacers {
+            @if $size !=0 {
+                .m#{$infix}-n#{$size} {
+                    margin: -$length !important;
+                }
+
+                .mt#{$infix}-n#{$size},
+                .my#{$infix}-n#{$size} {
+                    margin-top: -$length !important;
+                }
+
+                .mr#{$infix}-n#{$size},
+                .mx#{$infix}-n#{$size} {
+                    margin-right: -$length !important;
+                }
+
+                .mb#{$infix}-n#{$size},
+                .my#{$infix}-n#{$size} {
+                    margin-bottom: -$length !important;
+                }
+
+                .ml#{$infix}-n#{$size},
+                .mx#{$infix}-n#{$size} {
+                    margin-left: -$length !important;
+                }
+            }
+        }
+
+        // Some special margin utils
+        .m#{$infix}-auto {
+            margin: auto !important;
+        }
+
+        .mt#{$infix}-auto,
+        .my#{$infix}-auto {
+            margin-top: auto !important;
+        }
+
+        .mr#{$infix}-auto,
+        .mx#{$infix}-auto {
+            margin-right: auto !important;
+        }
+
+        .mb#{$infix}-auto,
+        .my#{$infix}-auto {
+            margin-bottom: auto !important;
+        }
+
+        .ml#{$infix}-auto,
+        .mx#{$infix}-auto {
+            margin-left: auto !important;
+        }
+    }
+}
+
+
+
+
+
+
+/* Shadow ==================================================*/
+
+
+.shadow {
+    box-shadow: $box-shadow !important;
+}
+
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+
+
+/* grid==================================================*/
+// Rows
+
+@if $enable-grid-classes {
+    .row {
+        @include make-row();
+    }
+
+
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+
+        >.col,
+        >[class*='col-'] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+// Columns
+
+@if $enable-grid-classes {
+    @include make-grid-columns();
+}
+
+/*  visually-hidden ==================================================*/
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background: none;
+}
+
+/*  curser ==================================================*/
+.curser-poiner {
+    cursor: pointer;
+
+}

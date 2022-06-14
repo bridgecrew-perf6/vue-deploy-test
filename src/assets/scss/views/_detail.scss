@@ -1,0 +1,441 @@
+//base
+@import "~@/assets/scss/funtions/functions";
+@import "~@/assets/scss/base/variables";
+@import "~@/assets/scss/mixins/mixins";
+
+.order_option_box {
+    width: 100%;
+  }
+  .o_img_info {
+    padding: 2rem 1.333rem;
+    background: #fff;
+  }
+  .o_img_info > span {
+    // z-index: 3;
+    position: relative;
+    display: block;
+    width: 6.667rem;
+    height: 6.667rem;
+    margin: 0 auto 1.333rem auto;
+  }
+  .o_img_info > span::before {
+    // z-index: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 0.467rem;
+    -webkit-filter: drop-shadow(0px 0.333rem 0.333rem #bbb);
+    filter: drop-shadow(0px 0.333rem 0.333rem #bbb);
+  }
+  .o_img_info > span > a {
+    // z-index: 2;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius:0.467rem;
+    overflow:hidden;
+  }
+  .o_img_info > span > a > img {
+    // z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    /* border-radius: 0.467rem; */
+  }
+  .o_img_info > h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #222222;
+  }
+  .o_img_info > p {
+    /* padding:0.467rem 0 0 0; */
+    padding: 0.667rem 0 0 0;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #888888;
+    line-height: 1.6;
+  }
+  .o_img_info > p.components_sale {
+    margin: 1rem 0 0 0;
+    // z-index: 1;
+    position: relative;
+    /* padding: 0.9rem 0; */
+    padding: 0;
+    text-align: center;
+    border-radius: 0.467rem;
+    border: solid 0.067rem #7174ce;
+    /* background: url(~@/images/icon/components_sale.png) no-repeat 17.5% 48%;
+    background-size: 1.667rem 1.667rem; */
+    /* text-indent: 2.133rem; */
+    line-height: 1.1;
+  }
+  .o_img_info > p.components_sale > span {
+    display: inline-block;
+    padding: 0.85rem 0 0 0;
+    font-size: 0.933rem;
+    font-weight: 500;
+    letter-spacing: -0.028rem;
+    color: #666666;  
+    line-height: 1.1;
+  }
+  .o_img_info > p.components_sale > i {
+    display: inline-block;
+    width: 1.667rem;
+    height: 1.667rem;
+    margin: 0.6rem 0.467rem 0.6rem 0;
+  }
+  .o_img_info > p.components_sale > i > img {
+    width: 100%;
+    height: 100%;
+  }
+  .o_img_info > div {
+    padding: 0.867rem 0 0 0;
+    text-align: center;
+  }
+  .o_img_info > div strong {
+    float: left;
+    display: block;
+    margin-left: -0.133rem;
+    padding: 0 0.167rem 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $primary-1;
+    line-height: 1.1;
+  }
+  .o_img_info > div span {
+    padding: 0 0.2rem 0 0.4rem;
+    float: left;
+    display: block;
+    margin-left: -0.133rem;
+    font-size: 1rem;
+    color: #666666;
+  }
+  .o_img_info > div em {
+    position: relative;
+    float: left;
+    display: block;
+    /* margin:0.067rem 0 0 0.333rem; */
+    /* margin:0.067rem 0 0 0.167rem; */
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    color: #cccccc;
+    line-height: 1.3;
+  }
+  .o_img_info > div em::after {
+    content: "";
+    display: block;
+    // z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0.067rem;
+    background: #ccc;
+    transform: translateY(-50%);
+  }
+.order_option_box{
+  &::after{
+    z-index: -1;
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    max-width: 720px;
+    height: 100vh;
+    background: #f5f6f7;
+
+  }
+
+}
+  .order_option_box .o_img_info > div strong {
+    float: none;
+    display: inline-block;
+    /* padding: 0 0.233rem 0 0; */
+    padding: 0 0.333rem 0 0;
+  }
+  .order_option_box .o_img_info > div span {
+    float: none;
+    display: inline-block;
+    padding: 0;
+    font-weight: 600;
+    color: #444;
+  }
+  .order_option_box .o_img_info > div em {
+    float: none;
+    display: inline-block;
+    line-height: 1.2;
+    margin: 0 0 0 0.1rem;
+  }
+  .o_option {
+    width: 100%;
+  }
+  /* .o_option > li {
+  } */
+  .o_option > li > h3 {
+    position: relative;
+    display: block;
+    padding: 0.833rem 1.333rem;
+    font-size: 0.867rem;
+    font-weight: 600;
+    letter-spacing: -0.026rem;
+    color: #666666;
+    background: #f5f6f7;
+    border-top: 0.067rem solid #ececec;
+  }
+  .o_option > li > h3 > span {
+    position: absolute;
+    top: 0.833rem;
+    right: 1.333rem;
+    font-size: 0.867rem;
+    font-weight: 300;
+    letter-spacing: -0.026rem;
+    color: $primary-1;
+  }
+  .o_option > li > ul {
+    padding: 1.667rem 1.333rem;
+  }
+  .o_option > li > ul > li {
+    /* padding: 0 0 1.333rem 0;
+    padding: 0 0 0.667rem 0; */
+    padding: 0 0 1rem 0;
+    margin-top: 0.1rem;
+  }
+  .o_option > li > ul > li:last-child {
+    padding: 0;
+  }
+  .o_option > li > ul > li::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .o_option > li > ul > li > span {
+    float: left;
+    display: block;
+    width: 75%;
+  }
+  .o_option > li > ul > li > p {
+    float: right;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+    /* line-height: 1.55; */
+    line-height: 1.2;
+    text-align: right;
+    color: #666666;
+  }
+  .agreement_design.long_title input[type="radio"] + label {
+    height: auto;
+    max-height: 2.9rem;
+    margin: -0.167rem 0 0 0;
+    padding: 0 0 0 2rem;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: "Arial";
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    color: #666666;
+  }
+  
+  .agreement_design.long_title input[type="radio"] + label {
+    height: auto;
+    max-height: 2.9rem;
+    margin: -0.167rem 0 0 0;
+    padding: 0 0 0 2rem;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: "Arial";
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+  }
+  .agreement_design.long_title input[type="radio"] + label > span {
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    line-height: 1.55;
+    color: #666;
+    font-family: "Spoqa Han Sans Neo";
+  }
+  .agreement_design input[type="radio"] + label {
+    height: auto;
+    max-height: 2.9rem;
+    margin: -0.167rem 0 0 0;
+    padding: 0 0 0 2rem;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: "Arial";
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    color: #666666;
+  }
+  .agreement_design input[type="radio"] + label > span {
+    font-size: 1rem;
+    /* line-height: 1.55; */
+    line-height: 1.7;
+    letter-spacing: -0.03rem;
+    color: #666666;
+    font-family: "Spoqa Han Sans Neo";
+  }
+  .agreement_design input[type="checkbox"] + label {
+    height: auto;
+    max-height: 2.9rem;
+    margin: -0.167rem 0 0 0;
+    padding: 0 0 0 2rem;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: "Arial";
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    color: #666666;
+  }
+  .agreement_design input[type="checkbox"] + label > span {
+    font-size: 1rem;
+    line-height: 1.55;
+    letter-spacing: -0.03rem;
+    color: #666666;
+    font-family: "Spoqa Han Sans Neo";
+  }
+  .total_cart_add {
+    // z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+  }
+  .total_cart_add.addFixed {
+    // z-index: 2;
+    position: fixed;
+    bottom: 3.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .total_cart_add > div {
+    border-top: 0.067rem solid #e6e6e6;
+    padding: 1.667rem 1.333rem 2rem 1.333rem;
+    background: #f5f6f7;
+  }
+  .total_cart_add > div > h3 {
+    float: left;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+    color: #666666;
+  }
+  .total_cart_add > div > ul {
+    float: right;
+  }
+  .total_cart_add > div > ul > li {
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    text-align: right;
+    color: #888888;
+  }
+  .total_cart_add > div > ul > li > strong {
+    padding: 0 0 1rem 0;
+    display: block;
+    font-size: 1.333rem;
+    font-weight: 600;
+    text-align: right;
+    color: #444444;
+  }
+  .total_cart_add > div > ul > li > span {
+    display: block;
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    text-align: right;
+    color: #888888;
+  }
+  .total_cart_add > div > ul > li > span.count_num {
+    padding: 0.7rem 1rem 0 1rem;
+    font-size: 1.067rem;
+    font-weight: 600;
+    color: #444444;
+  }
+  .total_cart_add > div.count_box {
+    padding: 1.333rem;
+    background: #fff;
+  }
+  .total_cart_add > div.count_box > h3 {
+    padding: 0.6rem 0;
+  }
+  .plus_box > li {
+    float: left;
+  }
+  .plus_box > li > span {
+    display: block;
+    padding: 0.6rem 1rem;
+    font-size: 1.067rem;
+    font-weight: 600;
+    letter-spacing: -0.032rem;
+    color: #444444;
+  }
+  .plus_box > li > button {
+    display: block;
+    background: transparent;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .plus_box > li > button > img {
+    width: 99%;
+    height: 99%;
+  }
+  .add_cart_btn {
+    width: 100%;
+  }
+  .add_cart_btn > button {
+    width: 100%;
+    padding: 1.333rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #ffffff;
+    background: $primary-1 url(~@/assets/images/icon/icon_cart.png) no-repeat 41% 50%;
+    background-size: 1.4rem 1.4rem;
+    text-indent: 2rem;
+  }
+  .add_cart_btn > button > span {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    color: #ffffff;
+  }
+  .close_cart_btn > button {
+    width: 100%;
+    padding: 1.333rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #ffffff;
+    background: #aaa;
+  }

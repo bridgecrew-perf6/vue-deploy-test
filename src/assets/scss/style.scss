@@ -1,0 +1,24 @@
+@charset "UTF-8";
+//base
+@import "./funtions/functions";
+@import "./base/variables";
+@import "./mixins/mixins";
+
+//reset
+@import "./base/reset";
+
+//common 
+@import './common/utils';
+@import './common/layouts';
+@import './common/forms';
+@import './common/buttons';
+@import './common/tables';
+@import './common/modal';
+@import './common/tab';
+@import './common/shop';
+
+//components
+//해당 components에 import하였음.
+
+//views
+//해당 views에 import하였음.

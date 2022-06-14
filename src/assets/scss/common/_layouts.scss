@@ -1,0 +1,94 @@
+//Global
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base + px;
+    font-weight: $font-weight-base;
+    letter-spacing: $letter-spacing-base;
+    line-height: $line-height-base;
+    color: $font-color-base;
+    background-color: #fff;
+    word-break: break-all;
+  }
+  
+  //font-size
+  //앱개발 기준 360 사이즈보다 큰경우  +0.5 로 작업
+  @media all and (max-width: 361px) {
+    html,
+    body {
+      font-size: 15px;
+    }
+  }
+  
+  @media all and (max-width: 281px) {
+    html,
+    body {
+      font-size: 14px;
+    }
+  
+    span.input_wrap > input::placeholder {
+      font-size: 0.867rem;
+    }
+  }
+  
+  //layout
+  
+  #wrap {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+  
+    &.addNav {
+      padding: 0 0 4.467rem 0;
+    }
+  }
+  
+  .section_box {
+    width: 100%;
+  
+    div {
+      z-index: 1;
+      position: relative;
+      //padding: 0 1.333rem;
+    }
+  }
+  
+  .section_title {
+    height: 1.433rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    color: #222222;
+  }
+  
+  .page-title {
+    font-size: rem(36);
+    font-weight: bold;
+    // line-height: 1.5;
+    letter-spacing: letterSpacing(-1.08);
+    color: #222;
+  }
+  
+  .store-section-title {
+    font-size: rem(26);
+    font-weight: bold;
+    // line-height: 1.85;
+    letter-spacing: letterSpacing(-0.78);
+    color: #666;
+  }
+  
+  .store-section-text {
+    font-size: rem(30);
+    line-height: 1.6;
+    letter-spacing: letterSpacing(-3);
+    color: #666;
+  }
+  
+  
+  .wrapper{
+    padding-left:rem(20) ;
+    padding-right: rem(20);
+  }

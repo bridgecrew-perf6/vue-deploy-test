@@ -1,0 +1,117 @@
+//base
+@import "~@/assets/scss/funtions/functions";
+@import "~@/assets/scss/base/variables";
+@import "~@/assets/scss/mixins/mixins";
+
+/* SUMMARY:
+// 공통
+// 약관
+// signup
+// signin
+*/
+
+
+// 공통
+.user-contents{
+  padding-top:rem(30);
+}
+
+// 약관
+.join_agreement {
+
+  h2 {
+    padding: 0 0 1.133rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    color: #222222;
+  }
+
+  div {
+    padding: 1rem;
+    border-radius: 0.333rem;
+    border: 0.067rem solid #aaa;
+    box-shadow: 0.267rem 0.267rem 0.667rem 0 rgba(0, 0, 0, 0.16);
+    background: #fff;
+
+ 
+
+  }
+
+
+  ul {
+    padding: 1.733rem 1rem 0 1rem;
+
+    > li {
+      padding: 0 0 0.667rem 0;
+
+      &:last-child {
+        padding: 0;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      > {
+        span {
+          z-index: 1;
+          position: relative;
+          float: left;
+          display: inline-block;
+        }
+
+        p {
+          padding: 0.167rem 0 0 0;
+          z-index: 2;
+          position: relative;
+          float: right;
+          display: inline-block;
+
+          > a {
+            display: block;
+            width: 0.8rem;
+            height: 0.8rem;
+
+            > img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+
+// signup
+
+
+.login-box {
+  padding: 2rem 1.333rem 0 1.333rem;
+
+  .login-input {
+    width: 100%;
+
+    li {
+      margin: 0 0 0.667rem 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    p {
+      display: none;
+      padding: 0.6rem 0 0 0;
+      font-size: 0.867rem;
+      font-weight: 300;
+      letter-spacing: -0.026rem;
+      color: #e74038;
+    }
+  }
+}

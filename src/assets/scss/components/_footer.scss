@@ -1,0 +1,963 @@
+// base
+@import "~@/assets/scss/funtions/functions";
+@import "~@/assets/scss/base/variables";
+@import "~@/assets/scss/mixins/mixins";
+
+
+
+#footer {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    background: #f6f6f6;
+  }
+  #footer > div {
+    padding: 2rem 2rem 2.333rem 2rem;
+    text-align: center;
+  }
+  #footer > div > h2 {
+    display: block;
+    height: 1rem;
+    padding: 0 0 0.8rem 0;
+  }
+  #footer > div > h2 > a {
+    height: 1rem;
+    padding: 0 0.933rem 0 0;
+    display: inline-block;
+    font-size: 0.867rem;
+    font-weight: 600;
+    letter-spacing: -0.026rem;
+    text-align: center;
+    color: #888888;
+    background: url(~@/assets/images/icon/btn_more-s.png) no-repeat 100% 0;
+    background-size: 0.667rem 0.667rem;
+  }
+  #footer > div > p {
+    font-size: 0.733rem;
+    font-weight: 300;
+    line-height: 1.91;
+    letter-spacing: -0.022rem;
+    text-align: center;
+    color: #aaaaaa;
+  }
+  
+  /* 고정메뉴 */
+  #nav {
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 720px;
+    transform: translateX(-50%);
+    background: #fff;
+    border-top: 0.067rem solid #e2e2e2;
+  }
+  #nav > ul {
+    /* padding:0.833rem 1.0rem 0.800rem 1.0rem; */
+    padding: 0.833rem 0;
+  }
+  #nav > ul > li {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  #nav > ul > li > a {
+    padding: 1.867rem 0 0 0;
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.21;
+    letter-spacing: -0.024rem;
+    text-align: center;
+    color: #888888;
+  }
+  #nav > ul > li.order > a {
+    background: url(~@/assets/images/icon/btn_cart-default.png) no-repeat 50% 0;
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.discount > a {
+    background: url(~@/assets/images/icon/btn_coupon-default.png) no-repeat 50% 0;
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.home > a {
+    background: url(~@/assets/images/icon/btn_home-default.png) no-repeat 50% 0;
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.order_list > a {
+    background: url(~@/assets/images/icon/btn_history-default.png) no-repeat 50% 0;
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.mypage > a {
+    background: url(~@/assets/images/icon/btn_mypage-default.png) no-repeat 50% 0;
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.booking > a {
+    // background: url(~@/assets/images/icon/btn_booking-default.png) no-repeat 50% 0;
+    background-size: 1.4rem 1.4rem;
+  }
+  
+  #nav > ul > li.order > a.on {
+    color: $primary-1;
+    // background: var(--img-nav-order);
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.discount > a.on {
+    color: $primary-1;
+    // background: var(--img-nav-discount);
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.home > a.on {
+    color: $primary-1;
+    // background: var(--img-nav-home);
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.order_list > a.on {
+    color: $primary-1;
+    // background: var(--img-nav-orderList);
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.mypage > a.on {
+    color: $primary-1;
+    // background: var(--img-nav-mypage);
+    background-size: 1.4rem 1.4rem;
+  }
+  #nav > ul > li.booking > a.on {
+    color: $primary-1;
+    // background: var(--img-nav-booking);
+    background-size: 1.4rem 1.4rem;
+  }
+  /* 로그인 팝업 */
+  .pop {
+    z-index: 6;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .pop > div {
+    z-index: 7;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 720px;
+    background: #fff;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .pop > div > div {
+    position: relative;
+    padding: 1.333rem;
+  }
+  .login_icon {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: -2.333rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 1.067rem 1.133rem 1.2rem 1.133rem;
+    background: $primary-1;
+    border-radius: 100%;
+    overflow: hidden;
+    transform: translateX(-50%);
+  }
+  .login_icon > img {
+    width: 100%;
+  }
+  .login_pop > h2 {
+    padding: 2rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #222222;
+  }
+  .login_pop > p {
+    padding: 1rem 0 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #666666;
+  }
+  
+  /* 기본팝업 스타일 */
+  .full_btn_pop h2 {
+    /* padding:0.667rem 0 0 0; */
+    line-height: 1.5;
+    padding: 0.333rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #222222;
+  }
+  .full_btn_pop h2 > strong {
+    display: inline-block;
+    /* padding: 0 0 0.5rem 0; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* line-height: 1.5; */
+    letter-spacing: -0.036rem;
+    color: $primary-1;
+  }
+  
+  .full_btn_pop p {
+    /* padding: 1rem 0 0 0; */
+    padding: 0.667rem 0 0 0;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #666666;
+    line-height: 1.5;
+  }
+  .full_btn_pop p > strong {
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: $primary-1;
+    line-height: 1.5;
+  }
+  
+  .pop_btn {
+    padding: 1.667rem 0 0 0;
+    display: block;
+    width: 100%;
+    border-radius: 0.333rem;
+    overflow: hidden;
+  }
+  .pop_btn > button {
+    padding: 1.167rem 0;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #ffffff;
+    background: #2a2a41;
+    border-radius: 0.333rem;
+    overflow: hidden;
+  }
+  .pop_two_btn {
+    padding: 1.667rem 0 0 0;
+    width: 100%;
+  }
+  .pop_two_btn > ul {
+    width: 100%;
+  }
+  .pop_two_btn > ul > li {
+    float: left;
+    width: 48%;
+  }
+  .pop_two_btn > ul > li:nth-child(2) {
+    float: right;
+    text-align: right;
+  }
+  .pop_two_btn > ul > li > button.no_btn {
+    padding: 1rem 0;
+    /* width:310px; */
+    width: 100%;
+    max-width: 10.333rem;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #444444;
+    border: 0.067rem solid #888;
+    border-radius: 0.333rem;
+    background: #fff;
+  }
+  .pop_two_btn > ul > li > button.yes_btn {
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 10.333rem;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.333rem;
+    border: 0.067rem solid #2a2a41;
+    background: #2a2a41;
+  }
+  .pop_two_btn > ul > li > button.yes_btn.off {
+    border: 0.067rem solid #aaa;
+    background: #aaa;
+  }
+  /* 영업종료 팝업 */
+  .close_store {
+    z-index: 6;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.82);
+  }
+  .close_store > .close_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+  }
+  .close_store > .close_info > h2 {
+    padding: 5rem 0 1.133rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* line-height: 1.5; */
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #ffffff;
+    background: url(~@/assets/images/main/icon_time.png) no-repeat 50% 0;
+    background-size: 3.333rem 3.333rem;
+  }
+  .close_store > .close_info > ul {
+    width: 100%;
+  }
+  .close_store > .close_info > ul > li {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .close_store > ul {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 720px;
+    border-top: 0.067rem solid #666;
+    transform: translateX(-50%);
+  }
+  .close_store > ul > li {
+    padding: 1.367rem 0 1.433rem 0;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .close_store > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .close_store > ul > li:first-child > a {
+    border-right: 0.067rem solid #666;
+  }
+  
+  /* 욥션리스트 팝업 */
+  .option_pop {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  .option_pop > h2 {
+    padding: 0.667rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #222222;
+  }
+  .option_pop > ul {
+    z-index: 1;
+    position: relative;
+    margin: 1.667rem 0 0 0;
+    overflow: auto;
+    padding: 0.333rem 0 0 0;
+    /* height: 7.833rem; */
+    height: 6.833rem;
+  }
+  .option_pop > ul > li {
+    /* padding: 0 0 1.133rem 0; */
+    padding: 0 0 1rem 0;
+  }
+  .option_pop > ul > li:last-child {
+    padding: 0;
+  }
+  
+  .requirement_pop_box .option_pop::after,
+  .pay_opition_pop .option_pop.blur::after,
+  .pickup_opition_pop .option_pop::after {
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 86%;
+    height: 2.6rem;
+    position: absolute;
+    left: 1.333rem;
+    bottom: 5.667rem;
+    opacity: 0.8;
+    -webkit-filter: blur(0.633rem);
+    filter: blur(0.633rem);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .requirement_pop_box .option_pop.h_none::after,
+  .pay_opition_pop .option_pop.h_none::after,
+  .pickup_opition_pop .option_pop.h_none::after {
+    display: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .text_pop > h2 {
+    /* padding:0.333em 0 0 0; */
+    padding: 0.667rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #222222;
+  }
+  .text_pop > ul {
+    margin: 1.667rem 0 0 0;
+  }
+  .text_pop > ul > li {
+    position: relative;
+    margin: 0 0 1.133rem 0;
+    font-size: 1rem;
+    letter-spacing: -0.9px;
+    color: #666666;
+    text-indent: 0.667rem;
+  }
+  .text_pop > ul > li > strong {
+      font-size: 1rem;
+      letter-spacing: -0.9px;
+      color: $primary-1;
+      text-indent: 0.667rem;
+  }
+  .text_pop > ul > li:last-child {
+    margin: 0;
+  }
+  .text_pop > ul > li::before {
+    content: "";
+    display: block;
+    width: 0.267rem;
+    height: 0.267rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    background: #aaa;
+  }
+  
+  .no_review > h2 {
+    padding: 0.667rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #222222;
+  }
+  .no_review > p {
+    padding: 1.133rem 0 1.667rem 0;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #666666;
+  }
+  
+  /* 주문구분 팝업 */
+  .order_list_pop > div > div > h2 {
+    /* padding:0.667rem 0 0 0; */
+    padding: 0.333rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: center;
+    color: #222222;
+  }
+  .order_list_pop .pop_close_btn {
+    display: block;
+    position: absolute;
+    top: 1.333rem;
+    right: 1.333rem;
+    width: 1.533rem;
+    height: 1.533rem;
+  }
+  .order_list_pop .pop_close_btn > button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+  .order_list_pop .pop_close_btn > button img {
+    width: 100%;
+  }
+  .order_list_pop ul {
+    padding: 1.6rem 0 0 0;
+    /* padding: 1.6rem 0 0 0.666rem; */
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .order_list_pop ul > li {
+    text-align: center;
+    /* margin: 0 0.583rem; */
+    /* max-width: 32.7%; */
+    width: 30%;
+  }
+  .order_list_pop ul > li > div {
+    /* padding:33px 0 30px 0; */
+    border: 0.067rem solid #ddd;
+    border-radius: 0.6rem;
+  }
+  .order_list_pop ul > li > div button {
+    /* width: 6.2rem; */
+    display: block;
+    width: 100%;
+    padding: 4.3rem 0 1rem 0;
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    text-align: center;
+    color: #666666;
+  }
+  @media all and (max-width: 321px) {
+    .order_list_pop ul > li > div button{
+      padding: 4rem 0 0.7rem 0;
+    }
+  }
+  .order_list_pop ul > li.o_delivery {
+    margin-left: 0;
+  }
+  .order_list_pop ul > li.o_table {
+    margin-right: 0;
+  }
+  .order_list_pop ul > li.o_delivery button {
+    // background: var(--img-icon-delivery);
+    background-size: 2.4rem 2.4rem;
+  }
+  .order_list_pop ul > li.o_pacakge button {
+    background: url(~@/assets/images/main/icon_pacakge.png) no-repeat 50% 1.1rem;
+    background-size: 2.4rem 2.4rem;
+  }
+  .order_list_pop ul > li.o_table button {
+    background: url(~@/assets/images/main/icon_table.png) no-repeat 50% 1.1rem;
+    background-size: 2.4rem 2.4rem;
+  }
+  /* 선택시 */
+  .order_list_pop ul > li > div.on {
+    border: 0.067rem solid $primary-1;
+  }
+  /* 비활성화 */
+  .order_list_pop ul > li > div.no_select {
+    z-index: 1;
+    position: relative;
+    border: solid 0.067rem #dddddd;
+    overflow: hidden;
+    background: #eee;
+  }
+  .order_list_pop ul > li > div.no_select button {
+    color: #aaa;
+  }
+  .order_list_pop ul > li.o_delivery div.no_select button {
+    background: url(~@/assets/images/main/icon_delivery_disable.png) no-repeat 50% 1.1rem;
+    background-size: 2.4rem 2.4rem;
+  }
+  .order_list_pop ul > li.o_pacakge div.no_select button {
+    background: url(~@/assets/images/main/icon_pacakge_disable.png) no-repeat 50% 1.1rem;
+    background-size: 2.4rem 2.4rem;
+  }
+  .order_list_pop ul > li.o_table div.no_select button {
+    background: url(~@/assets/images/main/icon_table_disable.png) no-repeat 50% 1.1rem;
+    background-size: 2.4rem 2.4rem;
+  }
+  .order_list_pop ul > li > div.no_select::after {
+    z-index: 2;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    opacity: 0.6;
+  }
+  
+  /* 단골메뉴 등록 팝업 */
+  .like_menu_pop > div > div > span {
+    display: block;
+    padding: 0.667rem 0 0.833rem 0;
+    border-bottom: 0.067rem solid #ddd;
+  }
+  .like_menu_pop > div > div > span > input {
+    width: 83%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    text-align: left;
+    color: #222222;
+    outline: 0;
+  }
+  .like_menu_pop > div > div > span > input::placeholder {
+    font-size: 0.933rem;
+    font-weight: 400;
+    /* line-height: 1.57; */
+    letter-spacing: -0.028rem;
+    color: #888888;
+  }
+  .like_menu_pop > div > div > ul {
+    position: absolute;
+    top: 2.2rem;
+    right: 1.333rem;
+  }
+  .like_menu_pop > div > div > ul > li {
+    margin: 0 0 0 0.533rem;
+    float: left;
+    font-size: 0.933rem;
+    letter-spacing: -0.028rem;
+    text-align: right;
+    color: #aaaaaa;
+    line-height: 1.1;
+  }
+  .like_menu_pop > div > div > ul > li:last-child {
+    width: 1.133rem;
+    height: 1.133rem;
+  }
+  .like_menu_pop > div > div > ul > li:last-child > button {
+    width: 100%;
+    background: transparent;
+  }
+  .like_menu_pop > div > div > ul > li:last-child > button > img {
+    width: 100%;
+  }
+  .like_menu_pop > div > div > p {
+    padding: 1.133rem 0 0 0;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: left;
+    color: #666666;
+  }
+  
+  /* 로그인 정보_ 가운데 팝업 설정 */
+  .center_pop {
+    z-index: 6;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .center_pop > div {
+    z-index: 7;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 88.888%;
+    max-width: 640px;
+    background: #fff;
+    border-radius: 0.6rem;
+  }
+  .center_pop > div > div {
+    z-index: 1;
+    position: relative;
+    padding: 1.333rem 1.333rem 1.667rem 1.333rem;
+    box-sizing: border-box;
+  }
+  .center_pop > div > div > h2 {
+    font-size: 1.067rem;
+  }
+  .center_pop .pop_btn > button {
+    padding: 0.8rem 0;
+    background: #222;
+  }
+  .center_pop .pop_two_btn > ul > li > button.no_btn {
+    padding: 0.8rem 0;
+  }
+  .center_pop .pop_two_btn > ul > li > button.yes_btn {
+    padding: 0.8rem 0;
+    background: #222;
+  }
+  .center_pop_close {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.333rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .center_pop_close > button {
+    background: transparent;
+    width: 100%;
+  }
+  .center_pop_close > button > img {
+    width: 100%;
+  }
+  /* 상세주소 설정 팝업 */
+  .detail_addr > div > div > h2 {
+    font-size: 1.067rem;
+    font-weight: 600;
+    letter-spacing: -0.032rem;
+    text-align: center;
+    color: #444444;
+  }
+  .detail_addr > div > div > ul {
+    padding: 1.2rem 0 0 0;
+  }
+  .detail_addr > div > div > ul > li {
+    padding: 0 0 0.733rem 0;
+  }
+  .detail_addr > div > div > ul > li:last-child {
+    padding: 0;
+  }
+  .detail_addr > div > div > ul > li > h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+    text-align: left;
+    color: #666666;
+    line-height: 1.38;
+  }
+  .detail_addr > div > div > ul > li > p {
+    padding: 0;
+    font-size: 0.867rem;
+    font-weight: 300;
+    letter-spacing: -0.026rem;
+    line-height: 1.45;
+    text-align: left;
+    color: #888888;
+  }
+  .detail_addr > div > div > ul > li > p > i {
+    display: inline-block;
+    height: 0.9rem;
+    padding: 0.203rem 0 0.063rem 0;
+    margin: 0 0.467rem 0 0;
+    width: 2.4rem;
+    font-size: 0.733rem;
+    letter-spacing: -0.022rem;
+    text-align: center;
+    color: #a3a6ab;
+    background: #fff;
+    line-height: 1;
+    border-radius: 0.267rem;
+    border: 0.067rem solid #afb4bf;
+  }
+  .detail_addr > div > div > ul > li > p > span {
+    display: inline-block;
+    width: 80%;
+    font-size: 0.867rem;
+    font-weight: 300;
+    letter-spacing: -0.026rem;
+    line-height: 1.45;
+    text-align: left;
+    color: #888888;
+  }
+  .detail_addr > div > div > ul > li > span {
+    display: block;
+  }
+  .detail_addr > div > div > ul > li > span input::placeholder {
+    font-size: 0.933rem;
+    letter-spacing: -0.028rem;
+    text-align: left;
+    color: #888888;
+  }
+  .detail_addr .pop_btn > button {
+    padding: 0.8rem 0;
+    background: #222;
+  }
+  
+  /* 쿠폰선택팝업 */
+  .pop.coupon_select_pop {
+    display: none;
+  }
+  .pop.coupon_select_pop > div {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .pop.coupon_select_pop > div > div {
+    padding: 0;
+    width: 100%;
+    max-width: 720px;
+  }
+  .coupon_list {
+    /* border-top:0.467rem solid #f5f6f7; */
+    padding: 1.667rem 1.333rem 2.333rem 1.333rem;
+  }
+  .coupon_list > h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    color: #222222;
+  }
+  .coupon_list > p {
+    padding: 1.133rem 0 0 0;
+    font-size: 1.067rem;
+    font-weight: 600;
+    color: #444444;
+  }
+  .coupon_list > p > strong {
+    font-size: 1.067rem;
+    font-weight: 600;
+    color: $primary-1;
+  }
+  .coupon_list > ul {
+    padding: 0.867rem 0 0 0;
+    width: 100%;
+  }
+  .coupon_list > ul > li {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    background: url(~@/assets/images/mypage/components_coupon.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+  .coupon_list > ul > li.on {
+    background: url(~@/assets/images/mypage/coupon_select.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+  .coupon_list > ul > li:last-child {
+    margin: 0;
+  }
+  .coupon_list > ul > li > div {
+    z-index: 1;
+    position: relative;
+    padding: 1.333rem;
+  }
+  .coupon_list > ul > li > div > span {
+    display: block;
+    font-size: 0.867rem;
+    font-weight: 500;
+    letter-spacing: -0.026rem;
+    color: #444444;
+  }
+  .coupon_list > ul > li > div > h3 {
+    padding: 0.667rem 0 0 0;
+    font-size: 1.067rem;
+    font-weight: 600;
+    letter-spacing: -0.032rem;
+    color: $primary-1;
+  }
+  .coupon_list > ul > li > div > i {
+    position: absolute;
+    right: 1.333rem;
+    top: 1.333rem;
+    width: 2.533rem;
+    height: 0.867rem;
+    padding: 0.833rem 0;
+    font-size: 0.867rem;
+    font-weight: 600;
+    letter-spacing: -0.026rem;
+    text-align: center;
+    color: $primary-1;
+    border-radius: 100%;
+    /* border:0.133rem solid $primary-1; */
+    background: var(--coupon-day-color);
+  }
+  .coupon_list > ul > li > div > ul {
+    padding: 1.1rem 0 0 0;
+  }
+  .coupon_list > ul > li > div > ul > li {
+    height: 0.867rem;
+    padding: 0.5rem 0 0 0;
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    color: #888888;
+  }
+  /* .coupon_list>ul>li>div>ul>li:first-child{
+    padding:0;
+  } */
+  .coupon_box > ul {
+    padding: 1.833rem 1.333rem 2rem 1.333rem;
+    background: #f5f6f7;
+  }
+  .coupon_box > ul > li {
+    padding: 0 0 0.8rem 0;
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    text-align: left;
+    color: #888888;
+  }
+  .coupon_box > ul > li:last-child {
+    padding: 0;
+  }
+  .coupon_box > ul > li > h3 {
+    padding: 0.067rem 0 0 0;
+    font-size: 0.867rem;
+    font-weight: 600;
+    letter-spacing: -0.026rem;
+    text-align: left;
+    color: #666666;
+    text-indent: 1.533rem;
+    line-height: 1.3;
+    background: url(~@/assets/images/mypage/icon_info_34.png) no-repeat 0 0;
+    background-size: 1.133rem 1.133rem;
+  }
+  
+  .coupon_list > p {
+    padding: 1.667rem 0 0 0;
+  }
+  .coupon_list > p > button {
+    padding: 1.133rem 0;
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0.333rem;
+    background: $primary-1;
+  }
+  
+  /* toast_pop */
+  .toast_pop {
+    z-index: 3;
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88.888%;
+    max-width: 640px;
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.833rem 0;
+    background: rgba(42, 42, 65, 0.9);
+    border-radius: 0.333rem;
+    overflow: hidden;
+    font-weight: 400;
+  }
+  
+  /* 주소복사 팝업 */
+  .copy_pop {
+    z-index: 5;
+    padding: 0.833rem 0 0.8rem 0;
+    position: fixed;
+    bottom: 1.667rem;
+    left: 50%;
+    width: 88.888%;
+    max-width: 640px;
+    transform: translateX(-50%);
+    font-size: 0.867rem;
+    letter-spacing: -0.026rem;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.9;
+    border-radius: 0.333rem;
+    background-color: #2a2a41;
+  }
+  
