@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d215cd2"],{c06e:function(c,e,t){"use strict";t.r(e);var n=t("7a23"),a=Object(n["h"])("h1",null,"page1",-1),o=Object(n["i"])(" 업데이트가 되었나?-05:07 "),r=Object(n["h"])("iframe",{width:"100%",height:"700",src:"https://www.kakaocorp.com/page/kakao/history"},null,-1),i=[a,o,r];function u(c,e,t,a,o,r){return Object(n["u"])(),Object(n["g"])("div",null,i)}var h={},w=t("6b0d"),d=t.n(w);const p=d()(h,[["render",u]]);e["default"]=p}}]);
+//# sourceMappingURL=chunk-2d215cd2.83811958.js.map

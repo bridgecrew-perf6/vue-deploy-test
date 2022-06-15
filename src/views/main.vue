@@ -28,7 +28,6 @@ import { useRouter } from 'vue-router';
 // import { useStore } from 'vuex'
 
 
-
 export default {
 
     setup(props) {
@@ -55,6 +54,9 @@ export default {
 
         }
 
+
+
+
         return {
             input1, onClick
 
@@ -64,11 +66,11 @@ export default {
 
 }
 </script>
-<style lang="">
+<style lang="scss">
 
-/* body ,button{
+button{
     color:var(--primary-1);
 
-} */
+} 
     
 </style>

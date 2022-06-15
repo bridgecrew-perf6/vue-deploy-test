@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 
 import VueScrollTo from "vue-scrollto";
+import { createHead } from '@vueuse/head'
 
 
 
@@ -23,4 +24,6 @@ const opt = {
     y: true
 }
 
-createApp(App).use(store).use(router).use(VueScrollTo, opt).mount("#app");
+const head = createHead()
+
+createApp(App).use(store).use(router).use(VueScrollTo, opt).use(head).mount("#app");

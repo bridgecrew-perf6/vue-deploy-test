@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21ad39"],{bcbd:function(n,c,e){"use strict";e.r(c);var t=e("7a23"),u=Object(t["h"])("h1",null,"page4",-1),b=Object(t["i"])(" 업데이트가 되었나?-1 "),d=[u,b];function a(n,c,e,u,b,a){return Object(t["u"])(),Object(t["g"])("div",null,d)}var r={},i=e("6b0d"),o=e.n(i);const p=o()(r,[["render",a]]);c["default"]=p}}]);
+//# sourceMappingURL=chunk-2d21ad39.bc4e4f52.js.map

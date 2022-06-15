@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c8f65"],{"56b0":function(n,c,t){"use strict";t.r(c);var e=t("7a23"),a=Object(e["h"])("h1",null,"page2",-1),s=Object(e["h"])("section",{class:"sticky-wrap"}," 업데이트가 되었나?-2 ",-1);function r(n,c){return Object(e["t"])(),Object(e["g"])(e["a"],null,[a,s],64)}var u=t("6b0d"),b=t.n(u);const o={},i=b()(o,[["render",r]]);c["default"]=i}}]);
-//# sourceMappingURL=chunk-2d0c8f65.4bcb8c58.js.map

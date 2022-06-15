@@ -77,6 +77,7 @@
 import { computed, defineComponent, ref } from 'vue';
 
 import { useRoute } from 'vue-router';
+import { useHead } from '@vueuse/head'
 
 export default defineComponent({
     data() {
@@ -115,6 +116,39 @@ export default defineComponent({
                 }
             })
         );
+        
+		const siteData = ref({
+			title: `타이틀`,
+			description: `description`,
+			keywords: `keywords`,
+		})
+
+
+         const cssLink = ref(
+            computed(() => {
+                if (route.name === 'main') {
+                    return './css/variable-demo-1.css';
+                } else {
+                    return './css/variable-demo-2.css';
+                }
+            })
+        );
+
+		useHead({
+			// Can be static or computed
+			title: computed(() => siteData.value.title),
+			meta: [
+				{
+					name: `description`,
+					content: computed(() => siteData.value.description),
+				},
+				{
+					name: `keywords`,
+					content: computed(() => siteData.value.keywords),
+				},
+			],
+			link: [{ rel: 'stylesheet', href: cssLink }],
+		})
 
         return { setInfo };
     },
