@@ -65,5 +65,10 @@ export default {
 }
 </script>
 <style lang="">
+
+/* body ,button{
+    color:var(--primary-1);
+
+} */
     
 </style>
